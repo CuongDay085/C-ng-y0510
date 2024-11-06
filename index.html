@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <i class="fa-solid fa-bars"></i>
+            <ul>
+                <li style="--x:1"><a href="#">Trang chủ</a></li>
+                <li style="--x:2"><a href="#">Đặc điểm</a></li>
+                <li style="--x:3"><a href="#">Về chúng tôi</a></li>
+                <li style="--x:4"><a href="#">Bộ sưu tập</a></li>
+                <li style="--x:5"><a href="#">Đánh Giá</a></li>
+                <li style="--x:6"><a href="#">Liên hệ</a></li>
+            </ul>
+        </div>
+        <div class="video-container">
+            <video src="/Video/video TP son la.mp4" autoplay muted loop></video>
+        </div>
+        <div class="header-content">
+            <h1>Khám phá</h1>
+            <p>Xách ba lô lên và đi nào</p>
+            <form id="searchForm">
+                <h1>Bạn hãy cho chúng tôi biết bạn muốn đi đâu</h1>
+                <p>Địa điểm</p>
+                <select id="destination">
+                    <option value="#">--Chọn địa điểm--</option>
+                    <option value="tpsonla">TP Sơn La</option>
+                    <option value="bacyen">Huyện Bắc Yên</option>
+                    <option value="mocchau">Huyện Mộc Châu</option>
+                    <option value="muongla"> Huyện Mường La</option>
+                    <option value="phuyen">Huyện Phù Yên</option>
+                    <option value="quynhnhai">Huyện Quỳnh Nhai</option>
+                    <option value="thuanchau">Huyện Thuận Châu</option>
+                    <option value="vanho">Huyện Vân Hồ</option>
+                    <option value="songma">Huyện Sông Mã</option>
+                </select>
+                <p>Số Người</p>
+                <input type="number" id="people" min="1" placeholder="Số người">
+                <p>Ngày đi</p>
+                <input type="date" id="departureDate">
+                <p>Ngày Về</p>
+                <input type="date" id="returnDate">
+                <button type="submit" id="searchButton">Tìm kiếm</button>
+            </form>
+        </div>
+    </header>
+    <!-- ------------------địa chỉ các địa điểm--------------------------- -->
+    <section class="nice-place">
+        <div class="container">
+            <h1 class="h1-style">Địa điểm nổi bật</h1>
+            <div class="nice-place-content row">
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/TP Son la/Thành phố sơn la.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour TP Sơn La</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Thành phố Sơn La được thành lập vào ngày 3/9/2008 của Chính phủ nước Cộng hòa Xã hội chủ nghĩa Việt Nam. Thành phố Sơn La hiện là đô thị loại II.</p>
+                        <button class="btn"> Mua Tour</button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/Muong la/Huyen muong la.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Mường la</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p> Huyện Mường La là huyện miền núi của tỉnh Sơn La, cách Thành phố sơn la 41km về phía đông bắc
+                        </p>
+                        <button class="btn"> Mua Tour</button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/Moc chau/Mộc châu.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Mộc Châu</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Mộc Châu là huyện miền núi, cao nguyên và biên giới, nằm ở hướng Đông Nam của tỉnh Sơn La</p>
+                        <button class="btn"> Mua Tour</button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/Bac yen/Huyện bắc yên.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Bắc yên</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Huyện Bắc Yên có đặc thù địa hình phức tạp, dốc đứng, nhiều núi cao, khe sâu, diện tích đất bằng rất ít</p>
+                        <button class="btn"> Mua Tour</button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/Thuan Chau/huyện thuận châu.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Thuận Châu</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Huyện Thuận Châu là một huyện thuộc tỉnh Sơn La, Việt Nam. Nằm ở phía tây bắc của đất nước, huyện có địa hình đa dạng với núi non hùng vĩ, rừng nguyên sinh và nhiều dòng sông.</p>
+                        <button class="btn"> Mua Tour</button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/Quynh Nhai/Huyen quynh nhai.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Quỳnh Nhai</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Huyện Quỳnh Nhai là một huyện thuộc tỉnh Sơn La, Việt Nam, nằm ở phía bắc của tỉnh. Huyện nổi bật với cảnh quan thiên nhiên hùng vĩ và hệ thống hồ thủy điện lớn.</p>
+                        <button class="btn"> Mua Tour</button>
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/Phù yên/Phu yen.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Phù Yên</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Huyện Phù Yên là một huyện thuộc tỉnh Sơn La, Việt Nam. Nằm ở khu vực Tây Bắc, huyện nổi bật với cảnh quan thiên nhiên đa dạng và phong phú.</p>
+                        <button class="btn"> Mua Tour</button>
+
+                    </div>
+                </div>
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/Van Ho/Huyen Van Ho.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Vân Hồ</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Huyện Vân Hồ là một huyện thuộc tỉnh Sơn La, Việt Nam, nằm ở phía tây bắc của đất nước.</p>
+                        <button class="btn"> Mua Tour</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="nice-place-item">
+                    <div class="nice-place-img">
+                        <img src="/Anh/Song Ma/huyện sông mã.jpg" alt="">
+                    </div>
+                    <div class="nice-place-text">
+                        <h2>Tour Sông Mã</h2>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p>Sông Mã là một con sông của Việt Nam và Lào có chiều dài 512 km, trong đó phần trên lãnh thổ Việt Nam dài 410 km và phần trên lãnh thổ Lào dài 102 km.</p>
+                        <button class="btn"> Mua Tour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- --------------------------------------------------- -->
+    <section class="about">
+        <div class="container">
+            <h1 class="h1-style"> Về chúng tôi</h1>
+            <div class="About-content row">
+                <div class="About-content-left">
+                    <img src="/Anh/ảnh item/Về chúng tôi.jpg" alt="">
+                </div>
+                <div class="About-content-right">
+                    <h2>Tại sao bạn nên chọn chúng tôi?</h2>
+                    <p>Chúng tôi là website hàng đầu về cung cấp dịch vụ du lịch nội địa và là lựa chọn hàng đầu cho bạn và gia đình của bạn </p>
+                    <button class="btn">Tìm hiểu thêm</button>
+                </div>
+            </div>
+            <div class="service row">
+                <div class="service-item">
+                    <img src="/Anh/ảnh item/ảnh nhà nghỉ.png" alt="">
+                    <p>Đặt Phòng</p>
+                </div>
+
+
+
+                <div class="service-item">
+                    <img src="/Anh/ảnh item/24 trên 7.jpg" alt="">
+                    <p>Dịch Vụ 24/7</p>
+                </div>
+
+
+                <div class="service-item">
+                    <img src="/Anh/ảnh item/sách hướng dẫn.jpg" alt="">
+                    <p> Sách hướng dẫn</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -----------Tuor du lich cua cac huyen------------------- -->
+    <section class="Tour">
+        <!-- ----------------Tuor Sơn la---------------------- -->
+        <div class="container">
+            <h1 class="h1-style">Tour Thành Phố Sơn La</h1>
+            <div class="tour-content row">
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/TP Son la/Nhà tù sơn la/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Nhà Tù Sơn La</h2>
+                        <p>Nhà tù Sơn La, hay còn gọi là Nhà tù Sơn La, là một di tích lịch sử quan trọng nằm tại thành phố Sơn La, tỉnh Sơn La, Việt Nam. Được xây dựng vào những năm 1908 bởi thực dân Pháp, nhà tù này đã trở thành nơi giam giữ nhiều chiến
+                            sĩ cách mạng, những người đấu tranh cho độc lập và tự do của dân tộc Việt Nam</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/TP Son la/Hồ tiên phong sơn la/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Hồ Tiên Phong</h2>
+                        <p>Hồ Tiên Phong là một trong những điểm đến nổi bật tại tỉnh Sơn La, Việt Nam. Nơi đây không chỉ có cảnh quan thiên nhiên tuyệt đẹp mà còn mang trong mình nhiều giá trị văn hóa và lịch sử độc đáo.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/TP Son la/Bia Quế lâm tự chế sơn la/1.png" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Bia Quế Lâm tự chế</h2>
+                        <p>Bia Quê Lâm Tự Chế là một sản phẩm đặc trưng của vùng Sơn La, Việt Nam, nổi bật với hương vị thơm ngon và quy trình sản xuất thủ công. Loại bia này không chỉ mang lại trải nghiệm ẩm thực độc đáo mà còn phản ánh văn hóa và phong
+                            tục tập quán của người dân địa phương</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ----------------------tuor Bắc Yên----------------------------------------- -->
+        <div class="container">
+            <h1 class="h1-style">Tour Huyện Bắc yên</h1>
+            <div class="tuor-content row">
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Bac yen/Sống lưng khủng long/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Sống Lưng khủng long</h2>
+                        <p>Sống Lưng Khủng Long Bắc Yên là một trong những điểm đến du lịch nổi bật tại huyện Bắc Yên, tỉnh Sơn La, Việt Nam. Nơi đây nổi tiếng với cảnh quan thiên nhiên hùng vĩ, những dãy núi trùng điệp và con đường đi bộ độc đáo, tạo điều
+                            kiện cho du khách khám phá vẻ đẹp của núi rừng Tây Bắc.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Bac yen/Tà xùa bắc yên/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Tà Xùa</h2>
+                        <p>Tà Xùa là một xã thuộc huyện Bắc Yên, tỉnh Sơn La, Việt Nam, nổi tiếng với vẻ đẹp thiên nhiên hùng vĩ và cảnh quan tuyệt đẹp. Nơi đây là một trong những điểm đến lý tưởng cho những ai yêu thích khám phá và trải nghiệm không gian
+                            yên bình giữa núi rừng Tây Bắc</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Bac yen/Xím vàng bắc yên/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Xím Vàng</h2>
+                        <p>Xím Vàng là một xã thuộc huyện Bắc Yên, tỉnh Sơn La, Việt Nam. Nơi đây nổi bật với vẻ đẹp thiên nhiên hoang sơ, cảnh quan núi rừng hùng vĩ và nền văn hóa đặc sắc của các dân tộc thiểu số.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------Huyện Mộc Châu------------------------------- -->
+        <div class="container">
+            <h1 class="h1-style">Tour Huyện Mộc Châu</h1>
+            <div class="tuor-content row">
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Moc chau/Cao nguyên mộc châu/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2> Cao Nguyên Mộc Châu</h2>
+                        <p>Mộc Châu là một huyện thuộc tỉnh Sơn La, Việt Nam, nổi tiếng với cảnh quan thiên nhiên tuyệt đẹp, khí hậu mát mẻ và nền văn hóa phong phú. Nơi đây đã trở thành một điểm đến hấp dẫn cho du khách trong và ngoài nước.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Moc chau/Cung đường chữ S mộc châu/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Cung đường chữ S Mộc Châu</h2>
+                        <p>Cung đường chữ S Mộc Châu là một trong những tuyến đường đẹp và nổi tiếng nhất tại huyện Mộc Châu, tỉnh Sơn La, Việt Nam. Với cảnh sắc thiên nhiên hùng vĩ và những khúc cua ngoạn mục, cung đường này đã thu hút nhiều du khách và
+                            trở thành điểm đến lý tưởng cho những ai yêu thích khám phá và chụp ảnh.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Moc chau/Cầu kính bạc long mộc châu/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Cầu kính bạch long</h2>
+                        <p>Cầu kính Bạch Long là một trong những điểm tham quan nổi bật tại tỉnh Sơn La, Việt Nam. Cầu được xây dựng bắc qua một thung lũng, mang đến cho du khách trải nghiệm thú vị và cảnh quan tuyệt đẹp.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Moc chau/Ngũ động bản ôn mộc châu/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Ngũ Động Bản Ôn</h2>
+                        <p>Ngũ Động Bản Ôn là một trong những điểm du lịch hấp dẫn tại huyện Mộc Châu, tỉnh Sơn La. Nơi đây nổi bật với hệ thống hang động kỳ thú, cảnh quan thiên nhiên tuyệt đẹp và giá trị văn hóa phong phú</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Moc chau/Rừng thông bản áng mộc châu/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Rừng Thông Bản Áng</h2>
+                        <p>Rừng thông Bản Áng là một trong những điểm du lịch nổi bật tại huyện Mộc Châu, tỉnh Sơn La, Việt Nam. Nơi đây không chỉ nổi bật với vẻ đẹp thiên nhiên hùng vĩ mà còn mang lại không khí trong lành và yên bình, thu hút nhiều du khách
+                            đến tham quan và nghỉ dưỡng.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Moc chau/Thung lung mận nà kha mộc châu/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Thung lũng mận Nà Kha</h2>
+                        <p>Thung lũng mận Nà Kha là một trong những điểm du lịch nổi bật tại huyện Mộc Châu, tỉnh Sơn La, Việt Nam. Nơi đây nổi tiếng với cảnh quan thiên nhiên thơ mộng và đặc sản mận ngon, thu hút nhiều du khách đến tham quan, chụp ảnh và
+                            thưởng thức</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!-- ------------------tuor Mường La------------------------- -->
+                <div class="container">
+                    <h1 class="h1-style">Tour Huyện Mường La</h1>
+                    <div class="tuor-content row">
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Muong la/Bản mòng mường la/1.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Bản Mòng</h2>
+                                <p>Bản Mòng là một bản làng nằm ở xã Mường Chiến, huyện Mường La, tỉnh Sơn La, Việt Nam. Nơi đây nổi bật với vẻ đẹp thiên nhiên hoang sơ và phong tục tập quán đặc sắc của các dân tộc thiểu số, chủ yếu là người Mông</p>
+                                <button class="btn">Khám Phá</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Muong la/Hang co nay mường la/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Hang Co Nay</h2>
+                        <p>Hang Co Nay là một trong những điểm tham quan nổi bật tại huyện Mường La, tỉnh Sơn La, Việt Nam. Nơi đây không chỉ nổi bật với vẻ đẹp thiên nhiên kỳ thú mà còn mang trong mình giá trị văn hóa và lịch sử đặc sắc</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Muong la/Ngọc chiến mường la/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Ngọc Chiến</h2>
+                        <p>Ngọc Chiến là một xã thuộc huyện Mường La, tỉnh Sơn La, Việt Nam, nổi tiếng với vẻ đẹp thiên nhiên hoang sơ và văn hóa phong phú của các dân tộc thiểu số. Đây là một điểm đến hấp dẫn cho những ai yêu thích khám phá và trải nghiệm
+                            cuộc sống ở vùng núi Tây Bắc</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Muong la/Nhà máy thủy điện mường la/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Nhà Máy Thủy điện Mường La</h2>
+                        <p>Nhà máy thủy điện Mường La là một trong những công trình thủy điện lớn tại tỉnh Sơn La, Việt Nam. Được xây dựng trên dòng sông Đà, nhà máy này không chỉ góp phần quan trọng vào hệ thống điện quốc gia mà còn có ý nghĩa lớn về phát
+                            triển kinh tế và xã hội cho khu vực.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!-- -------------------tour Phù Yên------------------------------------- -->
+                <div class="container">
+                    <h1 class="h1-style">Tour Huyện Phù yên</h1>
+                    <div class="tuor-content row">
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Phù yên/Cánh đồng mường tấc phù yên/1.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Cách Đồng Mường Tấc</h2>
+                                <p>Cánh đồng Mường Tấc, nằm ở huyện Phù Yên, tỉnh Sơn La, là một trong những cánh đồng nổi tiếng với vẻ đẹp thiên nhiên và phong cảnh hùng vĩ của núi rừng Tây Bắc. Nơi đây không chỉ thu hút du khách bởi cảnh quan mà còn bởi
+                                    văn hóa phong phú của các dân tộc thiểu số.</p>
+                                <button class="btn">Khám Phá</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Phù yên/Rừng đại tướng võ nguyên giáp phù yên/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Rừng Đại Tướng Võ Nguyên Giáp</h2>
+                        <p>Rừng Đại Tướng Võ Nguyên Giáp nằm tại huyện Phù Yên, tỉnh Sơn La, là một khu rừng đặc biệt gắn liền với tên tuổi của Đại tướng Võ Nguyên Giáp, một trong những vị tướng vĩ đại của quân đội Việt Nam. Khu rừng không chỉ mang giá trị
+                            lịch sử mà còn là một điểm đến du lịch hấp dẫn với cảnh quan thiên nhiên hùng vĩ.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!-- -------------------Huyện Quỳnh Nhai------------------------- -->
+                <div class="container">
+                    <h1 class="h1-style">Tour Huyện Quỳnh Nhai</h1>
+                    <div class="tuor-content row">
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Quynh Nhai/Cầu pá uôn Quỳnh Nhai/1.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Cầu Pá Uôn</h2>
+                                <p>Cầu Pá Uốn là một trong những cây cầu nổi bật tại huyện Quỳnh Nhai, tỉnh Sơn La, Việt Nam. Cây cầu không chỉ có ý nghĩa về mặt giao thông mà còn là một điểm đến hấp dẫn với cảnh quan thiên nhiên tuyệt đẹp</p>
+                                <button class="btn">Khám Phá</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Quynh Nhai/Đảo trái tim quỳnh nhai/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đảo Trái Tim</h2>
+                        <p>Đảo Trái Tim, nằm ở huyện Quỳnh Nhai, tỉnh Sơn La, là một trong những điểm đến nổi bật và hấp dẫn cho du khách yêu thiên nhiên và khám phá vẻ đẹp của vùng hồ sông Đà. Với hình dáng độc đáo và khung cảnh thơ mộng, đảo đã trở thành
+                            một biểu tượng của tình yêu và sự lãng mạn.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Quynh Nhai/Đền linh sơn thủy từ quỳnh nhai/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đền Linh Sơn Thủy Từ</h2>
+                        <p>Đền Linh Sơn Thủy Từ nằm tại huyện Quỳnh Nhai, tỉnh Sơn La, là một trong những điểm đến tâm linh nổi bật của khu vực. Đền không chỉ thu hút du khách bởi vẻ đẹp kiến trúc mà còn gắn liền với các truyền thuyết và tín ngưỡng của người
+                            dân địa phương.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="tour-content-item row">
+                    <div class="tour-content-item-img">
+                        <img src="/Anh/Quynh Nhai/Đền thờ nàng hang quỳnh nhai/1.jpg" alt="">
+                    </div>
+                    <div class="tour-content-item-text">
+                        <h2>Đền Thờ Nàng Hang</h2>
+                        <p>Đền thờ Nàng Hang, nằm tại huyện Quỳnh Nhai, tỉnh Sơn La, là một điểm đến văn hóa tâm linh nổi bật của khu vực. Đền thờ không chỉ thu hút du khách bởi vẻ đẹp kiến trúc mà còn gắn liền với các truyền thuyết và tín ngưỡng của người
+                            dân địa phương.</p>
+                        <button class="btn">Khám Phá</button>
+                    </div>
+                </div>
+                <!-- --------------------tuor Thuận Châu------------------------------ -->
+                <div class="container">
+                    <h1 class="h1-style">Tour Huyện Thuận Châu</h1>
+                    <div class="tuor-content row">
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Thuan Chau/Pha đin Thuận Châu/1.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Pha Đin</h2>
+                                <p>Pha Đin là một trong những đèo nổi tiếng và hùng vĩ nhất ở miền Bắc Việt Nam, thuộc huyện Thuận Châu, tỉnh Sơn La. Đèo Pha Đin không chỉ nổi bật với cảnh quan thiên nhiên tuyệt đẹp mà còn mang trong mình nhiều giá trị lịch
+                                    sử và văn hóa đặc sắc</p>
+                                <button class="btn">Khám Phá</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- -----------------------------tour Vân Hồ------------------------------------- -->
+                <div class="container">
+                    <h1 class="h1-style">Tour Huyện Vân Hồ</h1>
+                    <div class="tuor-content row">
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Van Ho/Thác chiềng khoa vân hồ/1.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Thác Chiềng Khoa</h2>
+                                <p>Thác Chiềng Khoa, nằm ở huyện Vân Hồ, tỉnh Sơn La, là một trong những thác nước đẹp và hùng vĩ của khu vực Tây Bắc Việt Nam. Với cảnh quan thiên nhiên tươi đẹp và không khí trong lành, thác Chiềng Khoa đã trở thành một
+                                    điểm đến hấp dẫn cho du khách yêu thích khám phá thiên nhiên.</p>
+                                <button class="btn">Khám Phá</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Van Ho/Đền thờ nàng bảng mương vân hồ/1.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Đền thờ nàng bảng mương</h2>
+                                <p>Đền thờ Bảng Mương, nằm trong huyện Vân Hồ, tỉnh Sơn La, là một trong những điểm đến tâm linh quan trọng và đặc sắc của khu vực. Đền không chỉ thu hút du khách bởi vẻ đẹp kiến trúc mà còn gắn liền với nhiều truyền thuyết
+                                    và giá trị văn hóa của người dân địa phương.</p>
+                                <button class="btn">Khám Phá</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Van Ho/Thác tạt nàng vân hồ/1.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Thác tạt nàng</h2>
+                                <p>Thác Tạt Nàng, nằm ở huyện Vân Hồ, tỉnh Sơn La, là một trong những thác nước đẹp và hấp dẫn của khu vực Tây Bắc Việt Nam. Với cảnh quan thiên nhiên hùng vĩ và không khí trong lành, thác Tạt Nàng đã trở thành điểm đến lý
+                                    tưởng cho những ai yêu thích khám phá vẻ đẹp của núi rừng.</p>
+                                <button class="btn">Khám Phá</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Van Ho/Vân hồ lake/1.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Vân Hồ LaKe</h2>
+                                <p>Vân Hồ Lake, hay còn gọi là Hồ Vân Hồ, nằm tại huyện Vân Hồ, tỉnh Sơn La, Việt Nam. Đây là một trong những điểm đến hấp dẫn, nổi bật với vẻ đẹp tự nhiên và sự yên bình, thu hút nhiều du khách đến tham quan và nghỉ dưỡng</p>
+                                <button class="btn">Khám Phá</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--tour sông mã  -->
+                <div class="container">
+                    <h1 class="h1-style">Tour Huyện Sông mã</h1>
+                    <div class="tuor-content row">
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Song Ma/Cây đa mường hung/Cây đa Mường Hung.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Cây đa Mường Hung</h2>
+                                <p>Di tích cây đa Mường Hung là nơi chứng kiến rất nhiều tội ác của thực dân Pháp đối với người dân Mường Hung trong suốt bao năm kháng chiến. Khu di tích cây đa Mường Hung nằm cách dòng sông Mã khoảng 17 km, nếu muốn đến
+                                    nơi đây phải đi bằng cầu treo hoặc chèo đò qua sông Mã.</p>
+                                <button class="btn">khám phá</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Song Ma/Cửa khẩu chiềng khương/Cửa Khẩu chiềng khương.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Cửa Khẩu Chiềng Khương</h2>
+                                <p>Cửa khẩu quốc tế Chiềng Khương là cửa khẩu quốc tế tại vùng đất bản Chiềng Khương thuộc huyện Sông Mã, tỉnh Sơn La. Nơi đây nằm gần bên dòng sông Mã nổi tiếng nối liền sang Lào. Nếu có dịp đến với huyện Sông Mã, ngoài việc
+                                    chiêm ngưỡng vẻ đẹp hùng vĩ của thiên nhiên thì bạn cũng có thể tham quan địa điểm này.</p>
+                                <button class="btn">khám phá</button>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="tour-content-item row">
+                            <div class="tour-content-item-img">
+                                <img src="/Anh/Song Ma/Đền Thờ Hai Bà Trưng/Đền Thờ Hai Bà Trưng.jpg" alt="">
+                            </div>
+                            <div class="tour-content-item-text">
+                                <h2>Đền Thờ Hai Bà Trưng</h2>
+                                <p>Di tích đền thờ Hai Bà Trưng còn lưu giữ tương đối nguyên vẹn gồm 50 hiện vật làm bằng các loại chất liệu, như gỗ, đồng,... Những hiện vật này có niên đại khoảng từ thế kỷ XVI đến thế kỷ XIX. Đền thờ Hai Bà Trưng là nơi
+                                    lưu giữ văn hóa, có giá trị lịch sử và được công nhận là di tích lịch sử cấp Tỉnh vào năm 2011.</p>
+                                <button class="btn">khám phá</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+    </section>
+    <!-- ----------------------Nhận xét khách hàng------------------------------------------ -->
+    <section class="review">
+        <div class="container">
+            <h1 class="h1-style">Phản hồi</h1>
+            <div class="review-content row">
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="/Anh/ảnh item/ảnh phản hồi.png" alt="">
+                        <p><span>&ldquo;</span> Vân Hồ Lake, hay còn gọi là Hồ Vân Hồ, nằm tại huyện Vân Hồ, tỉnh Sơn La, Việt Nam. Đây là một trong những điểm đến hấp dẫn, nổi bật với vẻ đẹp tự nhiên và sự yên bình, thu hút nhiều du khách đến tham quan
+                            và nghỉ dưỡng <span>&rdquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="/Anh/ảnh item/Bảo.jpg" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Lò Quốc Bảo</h2>
+                            <p>Ngày 03/11/2024</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="/Anh/ảnh item/ảnh phản hồi.png" alt="">
+                        <p><span>&ldquo;</span> Vân Hồ Lake, hay còn gọi là Hồ Vân Hồ, nằm tại huyện Vân Hồ, tỉnh Sơn La, Việt Nam. Đây là một trong những điểm đến hấp dẫn, nổi bật với vẻ đẹp tự nhiên và sự yên bình, thu hút nhiều du khách đến tham quan
+                            và nghỉ dưỡng <span>&rdquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="/Anh/ảnh item/hải.jpg" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Cà Thị Hải</h2>
+                            <p>Ngày 05/11/2024</p>
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
+                <div class="review-item">
+                    <div class="review-item-text">
+                        <img src="/Anh/ảnh item/ảnh phản hồi.png" alt="">
+                        <p><span>&ldquo;</span> Vân Hồ Lake, hay còn gọi là Hồ Vân Hồ, nằm tại huyện Vân Hồ, tỉnh Sơn La, Việt Nam. Đây là một trong những điểm đến hấp dẫn, nổi bật với vẻ đẹp tự nhiên và sự yên bình, thu hút nhiều du khách đến tham quan
+                            và nghỉ dưỡng <span>&rdquo;</span></p>
+                    </div>
+                    <div class="review-item-img row">
+                        <img src="/Anh/ảnh item/hà.jpg" alt="">
+                        <div class="review-item-img-text">
+                            <h2>Điêu Chính Việt Hà</h2>
+                            <p>Ngày 09/11/2024</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ------------------Emal lien he-------------------------------- -->
+    <section class="signup">
+        <h1 class="h1-style">Đăng ký</h1>
+        <div class="signup-content">
+            <input type="text" placeholder="Nhập email của bạn">
+            <button class="btn">Gửi</button>
+        </div>
+    </section>
+    <!-- --------------------------liên hệ--------------------------- -->
+    <section class="contact">
+        <div class="container">
+            <h1 class="h1-style">Liên hệ</h1>
+            <div class="contact-content-top row">
+                <div class="contact-content-item">
+                    <input type="text" placeholder="Tên">
+                </div>
+                <div class="contact-content-item">
+                    <input type="text" placeholder="Địa Chỉ">
+                </div>
+                <div class="contact-content-item">
+                    <input type="text" placeholder="Email">
+                </div>
+            </div>
+            <input type="text" placeholder="Số Điện Thoại">
+            <div class="contact-content-bottom">
+                <textarea placeholder="Nội Dung"></textarea>
+                <button class="btn">Gửi</button>
+            </div>
+        </div>
+    </section>
+    <!-- ---------------js------------------- -->
+    <script src="script.js"></script>
+</body>
+
+</html>
