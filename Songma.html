@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cảm ơn quý khách đã lựa chọn Bắc Yên làm tour du lịch!!!</h1>
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d285378.64513452986!2d103.56847093935374!3d21.099399691646475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31326fe24a029d4d%3A0xa77406ab8a692994!2zU8O0bmcgTcOjLCBTxqFuIExhLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1730909575207!5m2!1svi!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <button class="btn" id="buy-tour-btn">Mua Tour</button>
+            <button class="btn" id="contact-zalo-btn">Liên Hệ Zalo</button>
+            <a href="index.html" class="btn">Thay đổi Lựa chọn</a>
+        </div>
+    </header>
+    <div class="Introduction">
+        <div class="Introduction-text">
+            <h2>Giới thiệu về chuyến đi của bạn</h2>
+            <p>Trong tour du lịch Sông Mã này, quý khách sẽ di chuyển đến các địa điểm nổi tiếng tại Bắc Yên:</p>
+            <ul>
+                <strong>&#8658; Cây đa Mường Hung</strong>
+                <strong>&#8658; Cửa Khẩu Chiềng Khương</strong>
+                <strong>&#8658; Đền thờ hai bà Trưng</strong>
+            </ul>
+        </div>
+        <h2>Giới thiệu về huyện Sông Mã</h2>
+        <div class="scroll-container">
+            <p>Huyện Sông Mã nằm ở phía tây nam tỉnh Sơn La, có vị trí địa lý: Phía bắc giáp huyện Thuận Châu Phía nam giáp huyện Sốp Cộp và giáp Lào Phía đông giáp huyện Mai Sơn Phía tây giáp huyện Điện Biên Đông, tỉnh Điện Biên. Huyện Sông Mã có diện tích
+                tự nhiên 164.220 ha, dân số năm 2019 là 154.224 người. Mật độ dân số đạt 94 người/km², gồm 6 dân tộc: Thái, Kinh, Mông, Xinh Mun, Khơ Mú, Kháng. Huyện Sông Mã có địa bàn kéo dài dọc sông Mã, địa hình khá phức tạp, bị chia cắt mạnh bởi
+                các dãy núi cao chạy theo hướng tây bắc - đông nam xen kẽ với các thung lũng và hệ thống sông, suối. Hệ thống núi dọc biên giới Việt - Lào của huyện có độ cao từ 306 - 1819m so với mực nước biển. Điểm thấp nhất là cánh đồng Nà Co Nghe,
+                bản Trại Phong, xã Chiềng Cang và điểm cao nhất là đỉnh núi bản Huổi Hưa, xã Mường Cai, độ dốc chung toàn huyện từ 250 - 300m. Phần lớn là địa hình cao và dốc gây khó khăn cho việc phát triển kinh tế - xã hội, xây dựng cơ sở hạ tầng; các
+                khu vực bằng và thung lũng chiếm tỉ lệ nhỏ phân bố rải rác tạo ra tiểu vùng khí hậu phù hợp với nhiều loại cây trồng, con giống khác nhau. Diện tích đất thuận lợi cho sản xuất nông nghiệp là 22.545ha chiếm 13,82% tổng diện tích tự nhiên,
+                trong đó đất để canh tác ruộng nước 1.700 ha chiếm 0,9% diện tích đất nông nghiệp, còn lại hầu hết là đất dốc. Đất có rừng có 55.814ha chiếm 34%, đất chưa sử dụng 93.364 ha chiếm 57,23% tổng diện tích đất tự nhiên. Hành chính Huyện Sông
+                Mã có 19 đơn vị hành chính cấp xã trực thuộc, bao gồm thị trấn Sông Mã (huyện lỵ) và 18 xã: Bó Sinh, Chiềng Cang, Chiềng En, Chiềng Khoong, Chiềng Khương, Chiềng Phung, Chiềng Sơ, Đứa Mòn, Huổi Một, Mường Cai, Mường Hung, Mường Lầm, Mường
+                Sai, Nà Nghịu, Nậm Mằn, Nậm Ty, Pú Bẩu, Yên Hưng.</p>
+        </div>
+        <h2>Lịch Trình Chuyến Đi</h2>
+        <button id="toggle-itinerary" class="btn">Xem Lịch Trình</button>
+
+        <!-- Modal cho lịch trình -->
+        <div id="itineraryModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h3>Ngày 1: Khởi Hành từ Hà Nội đến Sông Mã</h3>
+                <p>07:00 - Xuất phát từ Hà Nội, khởi hành đi Sông Mã.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Đến Sông Mã, nhận phòng khách sạn và nghỉ ngơi.</p>
+                <p>15:30 - Tham quan Cây Đa Mường Hung, khám phá vẻ đẹp thiên nhiên và văn hóa địa phương.</p>
+                <p>18:00 - Quay về khách sạn, ăn tối và nghỉ ngơi.</p>
+
+                <h3>Ngày 2: Khám Phá Sông Mã</h3>
+                <p>07:00 - Ăn sáng tại khách sạn.</p>
+                <p>08:30 - Khởi hành đến Đền Thờ Hai Bà Trưng, tìm hiểu về lịch sử và truyền thuyết.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Tự do tham quan khu vực xung quanh đền thờ, chụp ảnh và thưởng thức món ăn đặc sản.</p>
+                <p>17:00 - Quay về khách sạn, nghỉ ngơi.</p>
+                <p>19:00 - Tham gia bữa tối và thưởng thức các món ăn đặc sản địa phương.</p>
+
+                <h3>Ngày 3: Kết Thúc Chuyến Đi</h3>
+                <p>07:00 - Ăn sáng tại khách sạn và trả phòng.</p>
+                <p>08:30 - Tự do tham quan và chụp ảnh tại các địa điểm còn lại.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Khởi hành trở về Hà Nội.</p>
+                <p>18:00 - Về đến Hà Nội, kết thúc chuyến đi.</p>
+            </div>
+        </div>
+        <h2>Cây Đa Mường Hung</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Song Ma/Cây đa mường hung/Cây đa Mường Hung.jpg" alt="Cây Đa Mường Hung 1">
+            <img src="/Anh/Song Ma/Cây đa mường hung/2.jpg" alt="Cây Đa Mường Hung 2">
+            <h3>Giới thiệu về Cây Đa Mường Hung</h3>
+            <p>Cây Đa Mường Hung là một trong những cây cổ thụ nổi tiếng tại huyện Sông Mã, mang trong mình nhiều giá trị lịch sử và văn hóa.</p>
+
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Cổ thụ hàng trăm năm:</strong> Cây Đa có tuổi đời lâu năm, là biểu tượng của sức sống và sự bền bỉ của người dân nơi đây.</li>
+                <li><strong>Điểm dừng chân lý tưởng:</strong> Là nơi lý tưởng để du khách ghé thăm, chụp ảnh và tận hưởng không gian thiên nhiên.</li>
+                <li><strong>Văn hóa địa phương:</strong> Gắn liền với nhiều truyền thuyết và phong tục tập quán của người dân địa phương.</li>
+            </ul>
+
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Tham quan:</strong> Khách du lịch có thể tìm hiểu về lịch sử của cây và văn hóa của người dân địa phương.</li>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh xung quanh Cây Đa là nơi tuyệt vời cho những bức hình kỷ niệm.</li>
+                <li><strong>Dã ngoại:</strong> Tổ chức các buổi dã ngoại cùng bạn bè và gia đình.</li>
+            </ul>
+
+            <p>Cây Đa Mường Hung không chỉ là một biểu tượng của huyện Sông Mã mà còn là điểm đến thú vị cho những ai yêu thích khám phá thiên nhiên và văn hóa.</p>
+        </div>
+
+        <h2>Đền Thờ Hai Bà Trưng</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Song Ma/Đền Thờ Hai Bà Trưng/Đền Thờ Hai Bà Trưng.jpg" alt="Đền Thờ Hai Bà Trưng 1">
+            <img src="/Anh/Song Ma/Đền Thờ Hai Bà Trưng/2.jpg" alt="Đền Thờ Hai Bà Trưng 2">
+            <h3>Giới thiệu về Đền Thờ Hai Bà Trưng</h3>
+            <p>Đền Thờ Hai Bà Trưng là một di tích lịch sử văn hóa quan trọng, nơi thờ phụng hai vị nữ anh hùng dân tộc Trưng Trắc và Trưng Nhị.</p>
+
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Lịch sử hào hùng:</strong> Đền thờ ghi nhớ công lao to lớn của Hai Bà trong cuộc kháng chiến chống ngoại xâm.</li>
+                <li><strong>Kiến trúc đặc sắc:</strong> Đền được xây dựng theo phong cách truyền thống, mang đậm bản sắc văn hóa dân tộc.</li>
+                <li><strong>Không gian linh thiêng:</strong> Là nơi tổ chức các lễ hội và nghi lễ tưởng niệm Hai Bà Trưng.</li>
+            </ul>
+
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Tham quan:</strong> Khách tham quan có thể tìm hiểu về lịch sử và ý nghĩa của đền.</li>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh tại đền là nơi lý tưởng cho những bức hình đẹp.</li>
+                <li><strong>Tham gia lễ hội:</strong> Tham gia các lễ hội để trải nghiệm văn hóa đặc sắc của người dân địa phương.</li>
+            </ul>
+
+            <p>Đền Thờ Hai Bà Trưng là một điểm đến không thể bỏ qua cho những ai muốn tìm hiểu về lịch sử và văn hóa dân tộc Việt Nam.</p>
+        </div>
+        <h2>Cửa Khẩu Chiềng Khương</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Song Ma/Cửa khẩu chiềng khương/Cửa Khẩu chiềng khương.jpg" alt="Cửa Khẩu Chiềng Khương 1">
+            <img src="/Anh/Song Ma/Cửa khẩu chiềng khương/2.jpg" alt="Cửa Khẩu Chiềng Khương 2">
+            <h3>Giới thiệu về Cửa Khẩu Chiềng Khương</h3>
+            <p>Cửa Khẩu Chiềng Khương là một trong những cửa khẩu quốc tế quan trọng tại huyện Sông Mã, kết nối Việt Nam với Lào, đóng vai trò quan trọng trong giao thương và phát triển kinh tế của khu vực.</p>
+
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Vị trí chiến lược:</strong> Nằm trên tuyến đường giao thông huyết mạch, Cửa Khẩu Chiềng Khương là điểm giao lưu văn hóa và kinh tế giữa hai quốc gia.</li>
+                <li><strong>Hoạt động thương mại:</strong> Là nơi diễn ra nhiều hoạt động xuất nhập khẩu hàng hóa, mang lại lợi ích kinh tế cho địa phương.</li>
+                <li><strong>Khám phá văn hóa:</strong> Cửa khẩu không chỉ là nơi giao thương mà còn là nơi giao thoa văn hóa của các dân tộc khác nhau.</li>
+            </ul>
+
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Tham quan:</strong> Du khách có thể tìm hiểu về hoạt động hải quan và thương mại tại cửa khẩu.</li>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh tại cửa khẩu là nơi tuyệt vời cho những bức hình kỷ niệm.</li>
+                <li><strong>Khám phá ẩm thực:</strong> Thưởng thức các món ăn đặc trưng của vùng biên giới.</li>
+            </ul>
+
+            <p>Cửa Khẩu Chiềng Khương không chỉ là một điểm giao thương mà còn là nơi khám phá văn hóa và con người vùng biên giới, là điểm đến thú vị cho du khách.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tour Du Lịch Bắc Yên. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+    <!-- ---------------js------------------- -->
+    <script src="script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Tour Du Lịch Mường La</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cảm ơn quý khách đã chọn Mường La làm Tour du lịch!!!!!!! </h1>
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d571010.2598423689!2d104.2897020648963!3d20.870753780323266!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3133974072788b09%3A0xe9c4ec11b443a51b!2zTeG7mWMgQ2jDonUsIFB1bmcgTGFu!5e1!3m2!1svi!2s!4v1730887442515!5m2!1svi!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <button class="btn" id="buy-tour-btn">Mua Tour</button>
+            <button class="btn" id="contact-zalo-btn">Liên Hệ Zalo</button>
+            <a href="index.html" class="btn">Thay đổi Lựa chọn</a>
+        </div>
+    </header>
+    <div class="Introduction">
+        <div class="Introduction-text">
+            <h2>Giới thiệu về chuyến đi của bạn</h2>
+            <p>Trong tour du lịch Bắc Yên này, quý khách sẽ di chuyển đến các địa điểm nổi tiếng tại Bắc Yên:</p>
+            <ul>
+                <strong>&#8658; Bản mòn Mường La</strong>
+                <strong>&#8658; Hang cổ nay Mường La</strong>
+                <strong>&#8658; Ngọc Chiến Mường La</strong>
+                <strong>&#8658; Nhà máy thủy điện Mường La</strong>
+            </ul>
+        </div>
+        <h2>Lịch Trình Chuyến Đi</h2>
+        <button id="toggle-itinerary" class="btn">Xem Lịch Trình</button>
+        <!-- Modal cho lịch trình -->
+        <div id="itineraryModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h3>Ngày 1: Khởi Hành từ Hà Nội đến Mường La</h3>
+                <p>07:00 - Xuất phát từ Hà Nội, khởi hành đi Mường La.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Đến Mường La, nhận phòng khách sạn và nghỉ ngơi.</p>
+                <p>15:30 - Tham quan Bản Mòn Mường La, tìm hiểu văn hóa và phong tục địa phương.</p>
+                <p>18:00 - Quay về khách sạn, ăn tối và nghỉ ngơi.</p>
+
+                <h3>Ngày 2: Khám Phá Mường La</h3>
+                <p>07:00 - Ăn sáng tại khách sạn.</p>
+                <p>08:30 - Khởi hành đi thăm Hang Cổ Nay, khám phá vẻ đẹp kỳ bí của hang động.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Tiếp tục hành trình đến Ngọc Chiến, thưởng thức cảnh sắc thiên nhiên.</p>
+                <p>17:00 - Tham quan Nhà máy Thủy điện Mường La, tìm hiểu quy trình sản xuất điện.</p>
+                <p>19:00 - Tham gia bữa tối và thưởng thức các món ăn đặc sản địa phương.</p>
+
+                <h3>Ngày 3: Kết Thúc Chuyến Đi</h3>
+                <p>07:00 - Ăn sáng tại khách sạn và trả phòng.</p>
+                <p>08:30 - Tự do tham quan và mua sắm quà lưu niệm.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Khởi hành trở về Hà Nội.</p>
+                <p>18:00 - Về đến Hà Nội, kết thúc chuyến đi.</p>
+            </div>
+        </div>
+        <h2>Mường La Bản Mòn</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Muong la/Bản mòng mường la/1.jpg" alt="Mường La Bản Mòn 1">
+            <img src="/Anh/Muong la/Bản mòng mường la/2.jpg" alt="Mường La Bản Mòn 2">
+            <h3>Giới thiệu về Mường La Bản Mòn</h3>
+            <p>Mường La Bản Mòn là một trong những điểm đến mang đậm bản sắc văn hóa của người dân tộc thiểu số.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Cảnh quan thiên nhiên:</strong> Nơi đây nổi bật với những cánh đồng xanh, núi non hùng vĩ.</li>
+                <li><strong>Văn hóa đặc sắc:</strong> Du khách có cơ hội tìm hiểu về phong tục tập quán của người dân địa phương.</li>
+                <li><strong>Ẩm thực phong phú:</strong> Thưởng thức các món ăn truyền thống đặc sắc của nơi đây.</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Tham quan bản làng:</strong> Khám phá cuộc sống của người dân và các hoạt động hàng ngày.</li>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh thiên nhiên và bản sắc văn hóa là nơi lý tưởng cho những bức hình đẹp.</li>
+                <li><strong>Thưởng thức ẩm thực:</strong> Nếm thử các món ăn đặc sản địa phương.</li>
+            </ul>
+            <p>Mường La Bản Mòn là điểm dừng chân lý tưởng cho những ai yêu thích văn hóa và thiên nhiên.</p>
+        </div>
+
+        <h2>Hang Cổ Này</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Muong la/Hang co nay mường la/1.jpg" alt="Hang Cổ Này 1">
+            <img src="/Anh/Muong la/Hang co nay mường la/2.jpg" alt="Hang Cổ Này 2">
+            <h3>Giới thiệu về Hang Cổ Này</h3>
+            <p>Hang Cổ Này là một trong những hang động kỳ thú, mang trong mình nhiều huyền thoại và truyền thuyết.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Hệ thống nhũ đá:</strong> Hang động sở hữu những nhũ đá với hình thù kỳ lạ và đẹp mắt.</li>
+                <li><strong>Khung cảnh hoang sơ:</strong> Không khí trong lành, mát mẻ và tĩnh lặng.</li>
+                <li><strong>Văn hóa lịch sử:</strong> Hang chứa đựng nhiều câu chuyện về lịch sử và văn hóa của người dân nơi đây.</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Khám phá hang động:</strong> Trải nghiệm khám phá những ngóc ngách thú vị trong hang.</li>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh huyền bí và kỳ ảo là nơi lý tưởng cho những bức hình độc đáo.</li>
+                <li><strong>Tìm hiểu lịch sử:</strong> Tìm hiểu về các truyền thuyết liên quan đến hang động.</li>
+            </ul>
+            <p>Hang Cổ Này là một điểm đến thú vị cho những ai yêu thích khám phá và tìm hiểu.</p>
+        </div>
+
+        <h2>Ngọc Chiến</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Muong La/Ngọc chiến mường la/1.jpg" alt="Ngọc Chiến 1">
+            <img src="/Anh/Muong La/Ngọc chiến mường la/2.jpg" alt="Ngọc Chiến 2">
+            <h3>Giới thiệu về Ngọc Chiến</h3>
+            <p>Ngọc Chiến nổi tiếng với khung cảnh thiên nhiên tuyệt đẹp và những truyền thuyết huyền bí.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Cảnh sắc thiên nhiên:</strong> Nơi đây có những thác nước và cánh đồng xanh tươi.</li>
+                <li><strong>Văn hóa đặc sắc:</strong> Gặp gỡ và tìm hiểu về phong tục tập quán của các dân tộc thiểu số.</li>
+                <li><strong>Thảo mộc tự nhiên:</strong> Khám phá các loại thảo mộc và dược liệu quý hiếm.</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Khám phá thiên nhiên:</strong> Tham gia vào các hoạt động trekking và cắm trại.</li>
+                <li><strong>Chụp ảnh:</strong> Cảnh đẹp tự nhiên là nơi lý tưởng cho những bức hình ngoạn mục.</li>
+                <li><strong>Thưởng thức ẩm thực:</strong> Nếm thử các món ăn truyền thống của người dân địa phương.</li>
+            </ul>
+            <p>Ngọc Chiến là một điểm đến lý tưởng cho những ai yêu thích khám phá và tìm hiểu văn hóa.</p>
+        </div>
+        <h2>Nhà Máy Thủy Điện Mường La</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Muong La/Nhà máy thủy điện mường la/2.jpg" alt="Nhà Máy Thủy Điện Mường La 2">
+            <img src="/Anh/Muong La/Nhà máy thủy điện mường la/3.jpg" alt="Nhà Máy Thủy Điện Mường La 3">
+            <h3>Giới thiệu về Nhà Máy Thủy Điện Mường La</h3>
+            <p>Nhà Máy Thủy Điện Mường La không chỉ là một công trình năng lượng quan trọng mà còn là điểm tham quan thú vị.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Công trình kiến trúc:</strong> Thiết kế hiện đại và quy mô lớn.</li>
+                <li><strong>Tiềm năng năng lượng:</strong> Đóng góp lớn vào hệ thống điện lực quốc gia.</li>
+                <li><strong>Cảnh quan xung quanh:</strong> Vẻ đẹp hùng vĩ của núi rừng và lòng hồ.</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Tham quan:</strong> Khách có thể tham quan nhà máy và tìm hiểu về quy trình sản xuất điện.</li>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh quanh nhà máy là nơi lý tưởng cho những bức hình tuyệt đẹp.</li>
+                <li><strong>Khám phá thiên nhiên:</strong> Tận hưởng không khí trong lành và cảnh đẹp thiên nhiên xung quanh.</li>
+            </ul>
+            <p>Nhà Máy Thủy Điện Mường La là một điểm đến thú vị cho những ai quan tâm đến công nghệ và thiên nhiên.</p>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tour du lịch Mường La</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>

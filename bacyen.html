@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Tour Du Lịch Bắc Yên</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cảm ơn quý khách đã lựa chọn Bắc Yên làm tour du lịch!!!</h1>
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d239730.0965175437!2d104.30467919138093!3d21.249735924041307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3133aa1adea68a07%3A0xc7fc1f610d5c56e3!2zQuG6r2MgWcOqbiwgU8ahbiBMYSwgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1730694647785!5m2!1svi!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div>
+            <button class="btn" id="buy-tour-btn">Mua Tour</button>
+            <button class="btn" id="contact-zalo-btn">Liên Hệ Zalo</button>
+            <a href="index.html" class="btn">Thay đổi Lựa chọn</a>
+        </div>
+    </header>
+    <div class="Introduction">
+        <div class="Introduction-text">
+            <h2>Giới thiệu về chuyến đi của bạn</h2>
+            <p>Trong tour du lịch Bắc Yên này, quý khách sẽ di chuyển đến các địa điểm nổi tiếng tại Bắc Yên:</p>
+            <ul>
+                <strong>&#8658; Sống Lưng Khủng Long</strong>
+                <strong>&#8658; Tà Xùa Bắc Yên</strong>
+                <strong>&#8658; Xím Vàng Bắc Yên</strong>
+            </ul>
+        </div>
+        <h2>Giới thiệu về huyện Bắc Yên</h2>
+        <div class="scroll-container">
+            <p>Huyện có đặc thù địa hình phức tạp, dốc đứng, nhiều núi cao, khe sâu, diện tích đất bằng rất ít, 85 % diện tích có độ dốc hơn 250. Độ cao trung bình 1.000 m so với mực nước biển; có con Sông Đà chảy theo hướng Tây Bắc - Đông Nam qua 6 xã (Pắc
+                Ngà, Chim Vàn, Mường Khoa, Song Pe, Tạ Khoa, Chiềng Sại) với chiều dài gần 70 km; hệ thống suối tương đối nhiều: Suối Lừm, Suối Chim, suối Sại, suối Pe, suối Sập, suối Cao, Suối Nhạn, suối Khoa… cung cấp nguồn nước phục vụ cho sản xuất
+                và sinh hoạt của nhân dân các xã trong huyện. Huyện nằm trên trục Quốc lộ 37, sông Đà là tuyến giao thông đường thủy quan trọng trong giao lưu hàng hóa và phát triển kinh tế của huyện. Hệ thống giao thông còn gặp nhiều khó khăn; ngoài
+                3 xã Phiêng Ban, Song Pe, Mường Khoa và Thị trấn có đường Quốc lộ 37 chạy qua và 4 xã: Tà Xùa, Làng Chếu, Xím Vàng, Hang Chú có đường tỉnh lộ 112 rải nhựa đến trung tâm xã; còn lại 8 xã đã có đường giao thông nông thôn tới Trung tâm xã,
+                nhưng việc đi lại vào mùa mưa còn gặp nhiều khó khăn. Tuy nhiên, với địa hình chia cắt, nhiều núi cao, khe sâu, độ dốc lớn, có đỉnh Phusaphin cao 2.879m ở xã Háng đồng, có nhiều hang, động nằm rải rác ở các xã như: hang A Phủ tại xã Hồng
+                Ngài, hang Tấng ở bản Nà Dòn xã Chiềng Sại, hang bản Phù, hang bản En, hang bản Nhèm xã Phiêng Côn, hang Mó Tôm, hang Dơi, hang Lạnh ở bản Pe, hang Mong, hang Cỏ Thái ở bản Mong xã Song Pe...nếu khai thác tốt sẽ có nhiều ưu thế đối với
+                hoạt động du lịch vì có sự kết hợp của nhiều dạng địa hình, vừa thể hiện vẻ đẹp hùng vĩ và thơ mộng của thiên nhiên, vừa có khí hậu mát mẻ, không khí trong lành. Ở Bắc Yên có nhiều phong cảnh đẹp phù hợp cho hoạt động du lịch: Đó là các
+                sông, suối, thác nước, hang động, rừng cây với thế giới sinh vật tự nhiên vô cùng phong phú, đồng thời Bắc Yên còn là nơi cư trú của đồng bào các dân tộc ít người với đời sống và nền văn hoá đa dạng đặc sắc. Với sự kết hợp của địa hình,
+                khí hậu, nguồn nước, tài nguyên thực - động vật và bản sắc văn hoá của cộng đồng các dân tộc ít người, trong tương lai sẽ là nguồn tài nguyên du lịch tổng hợp có thể phát triển được nhiều loại hình du lịch khác nhau và có sức hấp dẫn đối
+                với du khách.</p>
+        </div>
+        <h2>Lịch Trình Chuyến Đi</h2>
+        <button id="toggle-itinerary" class="btn">Xem Lịch Trình</button>
+
+        <!-- Modal cho lịch trình -->
+        <div id="itineraryModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h3>Ngày 1: Khởi Hành từ Hà Nội</h3>
+                <p>07:00 - Xuất phát từ Hà Nội, khởi hành đi Bắc Yên.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Đến Bắc Yên, nhận phòng khách sạn và nghỉ ngơi.</p>
+                <p>15:30 - Tham quan Sống Lưng Khủng Long, thưởng thức cảnh đẹp thiên nhiên.</p>
+                <p>18:00 - Quay về khách sạn, ăn tối và nghỉ ngơi.</p>
+
+                <h3>Ngày 2: Khám Phá Bắc Yên</h3>
+                <p>07:00 - Ăn sáng tại khách sạn.</p>
+                <p>08:30 - Khởi hành đi Tà Xùa, tham gia trekking và khám phá.</p>
+                <p>12:00 - Dừng chân ăn trưa tại Tà Xùa.</p>
+                <p>14:00 - Tiếp tục khám phá Tà Xùa và giao lưu với người dân địa phương.</p>
+                <p>17:00 - Quay về khách sạn, nghỉ ngơi.</p>
+                <p>19:00 - Tham gia bữa tối và thưởng thức các món ăn đặc sản địa phương.</p>
+
+                <h3>Ngày 3: Kết Thúc Chuyến Đi</h3>
+                <p>07:00 - Ăn sáng tại khách sạn và trả phòng.</p>
+                <p>08:30 - Tham quan Xím Vàng, khám phá văn hóa bản địa.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Khởi hành trở về Hà Nội.</p>
+                <p>18:00 - Về đến Hà Nội, kết thúc chuyến đi.</p>
+            </div>
+        </div>
+        <h2>Sống Lưng Khủng Long</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Bac yen/Sống lưng khủng long/1.jpg" alt="Sống Lưng Khủng Long 1">
+            <img src="/Anh/Bac yen/Sống lưng khủng long/2.jpg" alt="Sống Lưng Khủng Long 2">
+            <img src="/Anh/Bac yen/Sống lưng khủng long/3.jpg" alt="Sống Lưng Khủng Long 3">
+            <img src="/Anh/Bac yen/Sống lưng khủng long/4.jpg" alt="Sống Lưng Khủng Long 4">
+
+            <h3>Giới thiệu về Sống Lưng Khủng Long</h3>
+            <p>Sống Lưng Khủng Long là một trong những địa điểm du lịch nổi tiếng tại Bắc Yên, tỉnh Sơn La, Việt Nam...
+            </p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Cảnh quan thiên nhiên:</strong> Sống Lưng Khủng Long nổi bật với cảnh sắc thiên nhiên tuyệt đẹp...
+                </li>
+                <li><strong>Hành trình leo núi:</strong> Để đến được Sống Lưng Khủng Long, du khách thường phải trải qua những con đường mòn leo núi...</li>
+                <li><strong>Văn hóa địa phương:</strong> Khu vực xung quanh Sống Lưng Khủng Long còn có nhiều bản làng của các dân tộc thiểu số...</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Chụp ảnh:</strong> Cảnh quan tuyệt đẹp là lý tưởng cho việc chụp ảnh...</li>
+                <li><strong>Dã ngoại:</strong> Nhiều du khách chọn cách mang theo đồ ăn và tổ chức các buổi dã ngoại...
+                </li>
+                <li><strong>Khám phá văn hóa:</strong> Bạn có thể tham gia các hoạt động văn hóa, tìm hiểu về đời sống của người dân bản địa...</li>
+            </ul>
+            <p>Sống Lưng Khủng Long không chỉ là một điểm đến du lịch hấp dẫn mà còn là nơi để bạn tìm thấy sự bình yên và gần gũi với thiên nhiên.</p>
+        </div>
+        <h2>Tà Xùa Bắc Yên</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Bac yen/Tà xùa bắc yên/1.jpg" alt="Tà Xùa 1">
+            <img src="/Anh/Bac yen/Tà xùa bắc yên/2.jpg" alt="Tà Xùa 2">
+
+            <h3>Giới thiệu về Tà Xùa</h3>
+            <p>Tà Xùa là một trong những điểm đến hấp dẫn tại Bắc Yên, nổi tiếng với những cánh đồng hoa tam giác mạch và cảnh quan thiên nhiên hùng vĩ. Đây là nơi lý tưởng cho những ai yêu thích chinh phục đỉnh núi và khám phá vẻ đẹp hoang sơ của núi rừng.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Cảnh sắc thiên nhiên:</strong> Tà Xùa nổi bật với những đỉnh núi cao, mây trời lồng lộng và những thung lũng xanh tươi.</li>
+                <li><strong>Hành trình trekking:</strong> Du khách có thể tham gia các tour trekking, khám phá những con đường mòn tuyệt đẹp qua các khu rừng nguyên sinh.</li>
+                <li><strong>Văn hóa bản địa:</strong> Tà Xùa còn là nơi sinh sống của nhiều dân tộc thiểu số, mang đến cho du khách cơ hội tìm hiểu về văn hóa phong phú của người dân nơi đây.</li>
+            </ul>
+        </div>
+
+        <h2>Xím Vàng Bắc Yên</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Bac yen/Xím vàng bắc yên/1.jpg" alt="Xím Vàng 1">
+            <img src="/Anh/Bac yen/Xím vàng bắc yên/2.jpg" alt="Xím Vàng 2">
+            <h3>Giới thiệu về Xím Vàng</h3>
+            <p>Xím Vàng là một xã thuộc huyện Bắc Yên, nổi tiếng với cảnh quan thiên nhiên tuyệt đẹp và không khí trong lành. Đây là nơi lý tưởng cho những chuyến dã ngoại và khám phá văn hóa bản địa.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Cảnh quan thiên nhiên:</strong> Xím Vàng có những ngọn núi hùng vĩ, cánh đồng xanh mướt và dòng suối trong vắt.</li>
+                <li><strong>Hoạt động ngoài trời:</strong> Du khách có thể tham gia các hoạt động như đi bộ đường dài, cắm trại và khám phá các bản làng dân tộc.</li>
+                <li><strong>Văn hóa phong phú:</strong> Nơi đây còn lưu giữ nhiều phong tục tập quán độc đáo của các dân tộc thiểu số sinh sống trong khu vực.</li>
+            </ul>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Tour Du Lịch Bắc Yên. Tất cả các quyền được bảo lưu.</p>
+    </footer>
+    <!-- ---------------js------------------- -->
+    <script src="script1.js"></script>
+</body>
+
+</html>

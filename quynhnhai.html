@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Tour du Lịch huyện Quỳnh Nhai</title>
+</head>
+
+<body>
+    <header>
+        <h1>Cảm ơn quý khách đã chọn Quỳnh Nhai làm Tour du lịch!!!!!!! </h1>
+        <div class="googlemap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d380394.5832582649!2d103.32207441171369!3d21.774762859963943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3132a41bb561df15%3A0xa11733b6f336d353!2zUXXhu7NuaCBOaGFpLCBTxqFuIExhLCBWaeG7h3QgTmFt!5e1!3m2!1svi!2s!4v1730702419510!5m2!1svi!2s"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div>
+            <button class="btn" id="buy-tour-btn">Mua Tour</button>
+            <button class="btn" id="contact-zalo-btn">Liên Hệ Zalo</button>
+            <a href="index.html" class="btn">Thay đổi Lựa chọn</a>
+        </div>
+    </header>
+    <div class="Introduction">
+        <div class="Introduction-text">
+            <h2>Giới thiệu về chuyến đi của bạn</h2>
+            <p>Trong tour du lịch Bắc Yên này, quý khách sẽ di chuyển đến các địa điểm nổi tiếng tại :</p>
+            <ul>
+                <strong>&#8658; Cầu pá uôn Quỳnh Nhai</strong>
+                <strong>&#8658; Đảo Trái Tim Quỳnh Nhai</strong>
+                <strong>&#8658; Đền Linh Sơn Thủy Tư Quỳnh Nhai</strong>
+                <strong>&#8658; Đền Thờ Nàng Hang Quỳnh Nhai</strong>
+                <strong>&#8658; Rừng thông nương cốp Phù yên</strong>
+            </ul>
+        </div>
+        <div class="scroll-container">
+            <h2>Giới thiệu về huyện </h2>
+            <p>Sau khi khu tự trị Tây Bắc giải thể, Quỳnh Nhai là huyện thuộc tỉnh Sơn La, bao gồm 6 xã: Cà Nàng, Chiềng Ơn, Mường Chiên, Mường Giôn, Pắc Ma và Pha Khinh. Ngày 22 tháng 2 năm 1975, chia xã Mường Giôn thành 2 xã: Mường Giôn và Chiềng Khay.[5]
+                Ngày 2 tháng 12 năm 2003, Chính phủ CHXHCN Việt Nam ban hành Nghị định số 148/2003/NĐ-CP, chuyển 25.911 ha diện tích tự nhiên và 26.659 người của 6 xã: Mường Giàng, Chiềng Bằng, Mường Sại, Liệp Muội, Nặm Ét và Chiềng Khoang của huyện Thuận
+                Châu về huyện Quỳnh Nhai[2]. Quỳnh Nhai là một trong 3 huyện của tỉnh Sơn La phải di chuyển dân ra khỏi vùng hồ thủy điện Sơn La và đã xây dựng 10 khu tái định cư với 65 bản cho các hộ tái định cư. Năm 2009, chuyển huyện lỵ từ xã Mường
+                Chiên đến xã Mường Giàng trên trục đấu nối quốc lộ 279 với tỉnh lộ 107 (Sơn La) và cách huyện lỵ cũ (nay thuộc phần lòng hồ thủy điện) khoảng 30 km về phía hạ lưu sông Đà. Ngày 21 tháng 2 năm 2011, Chính phủ ban hành Nghị quyết số 10/NQ-CP.[6]
+                Theo đó: Giải thể xã Liệp Muội (do nằm trong lòng hồ thủy điện Sơn La), điều chỉnh 872,25 ha diện tích tự nhiên và 919 người của xã Liệp Muội về xã Chiềng Bằng quản lý; điều chỉnh 1.212,75 ha diện tích tự nhiên và 1.238 người còn lại về
+                xã Nậm Ét quản lý Điều chỉnh 613,8 ha diện tích tự nhiên và 1.494 người của xã Mường Sại về xã Chiềng Bằng quản lý Điều chỉnh 957,4 ha diện tích tự nhiên và 375 người của xã Chiềng Ơn về xã Mường Giàng quản lý Thành lập xã Pá Ma Pha Khinh
+                trên cơ sở sáp nhập toàn bộ 4.948 ha diện tích tự nhiên và 1.629 nhân khẩu xã Pha Khinh, 5.544 ha diện tích tự nhiên và 1.453 nhân khẩu của xã Pắc Ma. Huyện Quỳnh Nhai có 11 xã như hiện nay.</p>
+        </div>
+        <h2>Lịch Trình Chuyến Đi</h2>
+        <button id="toggle-itinerary" class="btn">Xem Lịch Trình</button>
+
+        <!-- Modal cho lịch trình -->
+        <div id="itineraryModal" class="modal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <h3>Ngày 1: Khởi Hành từ Hà Nội đến Quỳnh Nhai</h3>
+                <p>07:00 - Xuất phát từ Hà Nội, khởi hành đi Quỳnh Nhai.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Đến Quỳnh Nhai, nhận phòng khách sạn và nghỉ ngơi.</p>
+                <p>15:30 - Tham quan Cầu Pá Uôn, chiêm ngưỡng cảnh đẹp xung quanh.</p>
+                <p>18:00 - Quay về khách sạn, ăn tối và nghỉ ngơi.</p>
+
+                <h3>Ngày 2: Khám Phá Quỳnh Nhai</h3>
+                <p>07:00 - Ăn sáng tại khách sạn.</p>
+                <p>08:30 - Khởi hành đến Đảo Trái Tim, khám phá vẻ đẹp thiên nhiên.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Tham quan Đền Thờ Linh Sơn, tìm hiểu về văn hóa và lịch sử địa phương.</p>
+                <p>16:00 - Tiếp tục tham quan Đền Thờ Nàng Hang, nơi có nhiều truyền thuyết hấp dẫn.</p>
+                <p>18:00 - Quay về khách sạn, nghỉ ngơi.</p>
+                <p>19:00 - Tham gia bữa tối và thưởng thức các món ăn đặc sản địa phương.</p>
+
+                <h3>Ngày 3: Khám Phá Vùng Núi</h3>
+                <p>07:00 - Ăn sáng tại khách sạn và trả phòng.</p>
+                <p>08:30 - Khám phá Rừng Thông Nương Cốp, tận hưởng không khí trong lành.</p>
+                <p>12:00 - Dừng chân ăn trưa tại một nhà hàng địa phương.</p>
+                <p>14:00 - Khởi hành trở về Hà Nội.</p>
+                <p>18:00 - Về đến Hà Nội, kết thúc chuyến đi.</p>
+            </div>
+        </div>
+        <h2>Cầu Pá Uôn</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Quynh Nhai/Cầu pá uôn Quỳnh Nhai/1.jpg" alt="Cầu Pá Uôn 1">
+            <img src="/Anh/Quynh Nhai/Cầu pá uôn Quỳnh Nhai/2.jpg" alt="Cầu Pá Uôn 2">
+            <h3>Giới thiệu về Cầu Pá Uôn</h3>
+            <p>Cầu Pá Uôn là một trong những cây cầu nổi tiếng tại Quỳnh Nhai, mang lại tầm nhìn đẹp ra lòng hồ và núi rừng xung quanh.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Kiến trúc độc đáo:</strong> Cầu được thiết kế hiện đại và chắc chắn, tạo thuận lợi cho việc di chuyển.</li>
+                <li><strong>Cảnh quan tuyệt đẹp:</strong> Từ cầu, du khách có thể ngắm nhìn cảnh sắc thiên nhiên hùng vĩ của hồ Pá Uôn.</li>
+                <li><strong>Điểm dừng chân lý tưởng:</strong> Là nơi lý tưởng để chụp ảnh và thư giãn.</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh xung quanh cầu là nơi lý tưởng cho những bức hình đẹp.</li>
+                <li><strong>Tham quan:</strong> Khám phá vùng đất xung quanh và tìm hiểu về văn hóa địa phương.</li>
+                <li><strong>Dã ngoại:</strong> Tổ chức các buổi dã ngoại cùng bạn bè và gia đình.</li>
+            </ul>
+            <p>Cầu Pá Uôn không chỉ là một công trình kiến trúc mà còn là điểm đến không thể bỏ qua khi đến Quỳnh Nhai.</p>
+        </div>
+
+        <h2>Đảo Trái Tim</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Quynh Nhai/Đảo trái tim quỳnh nhai/1.jpg" alt="Đảo Trái Tim 1">
+            <img src="/Anh/Quynh Nhai/Đảo trái tim quỳnh nhai/2.jpg" alt="Đảo Trái Tim 2">
+            <h3>Giới thiệu về Đảo Trái Tim</h3>
+            <p>Đảo Trái Tim là một hòn đảo nhỏ xinh đẹp giữa lòng hồ, nổi bật với hình dạng độc đáo giống như trái tim.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Cảnh quan thơ mộng:</strong> Đảo nổi bật giữa mặt hồ xanh biếc, tạo nên khung cảnh thiên nhiên tuyệt đẹp.</li>
+                <li><strong>Điểm đến lãng mạn:</strong> Là nơi lý tưởng cho những cặp đôi đến tham quan và chụp ảnh.</li>
+                <li><strong>Hoạt động giải trí:</strong> Có nhiều hoạt động vui chơi giải trí thú vị xung quanh hồ.</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Chụp ảnh:</strong> Cảnh đẹp ở đảo là điểm nhấn tuyệt vời cho những bức hình kỷ niệm.</li>
+                <li><strong>Tham quan:</strong> Khám phá các hoạt động văn hóa và truyền thống của người dân địa phương.</li>
+                <li><strong>Dã ngoại:</strong> Tổ chức các buổi dã ngoại trên đảo cùng bạn bè và gia đình.</li>
+            </ul>
+            <p>Đảo Trái Tim là một điểm đến không thể bỏ qua cho những ai yêu thích thiên nhiên và sự lãng mạn.</p>
+        </div>
+
+        <h2>Đền Thờ Linh Sơn</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Quynh Nhai/Đền linh sơn thủy từ quỳnh nhai/1.jpg" alt="Đền Thờ Linh Sơn 1">
+            <img src="/Anh/Quynh Nhai/Đền linh sơn thủy từ quỳnh nhai/2.jpg" alt="Đền Thờ Linh Sơn 2">
+            <h3>Giới thiệu về Đền Thờ Linh Sơn</h3>
+            <p>Đền Thờ Linh Sơn là một trong những di tích lịch sử và văn hóa quan trọng tại Quỳnh Nhai, nơi thờ phụng các vị thần linh.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Kiến trúc đặc sắc:</strong> Đền có kiến trúc truyền thống đẹp mắt, thu hút du khách đến tham quan.</li>
+                <li><strong>Không gian linh thiêng:</strong> Là nơi tổ chức các lễ hội và nghi lễ tín ngưỡng của người dân địa phương.</li>
+                <li><strong>Văn hóa tâm linh:</strong> Tìm hiểu về các phong tục tập quán và tín ngưỡng của người dân nơi đây.</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Tham quan:</strong> Khách tham quan có thể tìm hiểu về vị trí và vai trò của đền trong đời sống tâm linh.</li>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh xung quanh đền là nơi tuyệt vời cho những bức hình đẹp.</li>
+                <li><strong>Tham gia lễ hội:</strong> Tham gia vào các lễ hội để trải nghiệm văn hóa địa phương.</li>
+            </ul>
+            <p>Đền Thờ Linh Sơn là điểm đến lý tưởng cho những ai muốn tìm hiểu về văn hóa và lịch sử địa phương.</p>
+        </div>
+
+        <h2>Đền Thờ Nàng Hang</h2>
+        <div class="menutex-img">
+            <img src="/Anh/Quynh Nhai/Đền thờ nàng hang quỳnh nhai/1.jpg" alt="Đền Thờ Nàng Hang 1">
+            <img src="/Anh/Quynh Nhai/Đền thờ nàng hang quỳnh nhai/2.jpg" alt="Đền Thờ Nàng Hang 2">
+            <h3>Giới thiệu về Đền Thờ Nàng Hang</h3>
+            <p>Đền Thờ Nàng Hang là một trong những đền thờ nổi tiếng tại Quỳnh Nhai, gắn liền với nhiều truyền thuyết và huyền thoại địa phương.</p>
+            <h4>Đặc điểm nổi bật:</h4>
+            <ul>
+                <li><strong>Cảnh quan yên bình:</strong> Nằm giữa khung cảnh thiên nhiên tươi đẹp, đền mang lại không gian linh thiêng và bình yên.</li>
+                <li><strong>Di tích văn hóa:</strong> Là nơi bảo tồn và phát huy các giá trị văn hóa truyền thống của người dân nơi đây.</li>
+                <li><strong>Tín ngưỡng địa phương:</strong> Tham gia các nghi lễ và lễ hội để trải nghiệm văn hóa đặc sắc.</li>
+            </ul>
+            <h4>Hoạt động:</h4>
+            <ul>
+                <li><strong>Tham quan:</strong> Khách tham quan có thể tìm hiểu về lịch sử và văn hóa của đền.</li>
+                <li><strong>Chụp ảnh:</strong> Khung cảnh xung quanh đền là nơi tuyệt vời cho những bức hình kỷ niệm.</li>
+                <li><strong>Tham gia lễ hội:</strong> Tham gia vào các lễ hội để tìm hiểu sâu hơn về văn hóa địa phương.</li>
+            </ul>
+            <p>Đền Thờ Nàng Hang là một điểm đến thú vị cho những ai yêu thích khám phá văn hóa và lịch sử.</p>
+        </div>
+    </div>
+    <!-- ---------------js------------------- -->
+    <script src="script1.js"></script>
+</body>
+
+</html>
